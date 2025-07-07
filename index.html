@@ -10,6 +10,52 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
 	<!-- CSS here -->
+
+  <style>
+
+    .slider {
+      width: 90%;
+      max-width: 800px;
+      aspect-ratio: 16 / 9;
+      margin: 50px auto;
+      overflow: hidden;
+      position: relative;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      animation: slide 20s infinite;
+    }
+
+    /* Show each image with delay */
+    .slider img:nth-child(1) { animation-delay: 0s; }
+.slider img:nth-child(2) { animation-delay: 3s; }
+.slider img:nth-child(3) { animation-delay: 6s; }
+.slider img:nth-child(4) { animation-delay: 9s; }
+.slider img:nth-child(5) { animation-delay: 12s; }
+.slider img:nth-child(6) { animation-delay: 15s; }
+.slider img:nth-child(7) { animation-delay: 18s; }
+.slider img:nth-child(8) { animation-delay: 21s; }
+.slider img:nth-child(9) { animation-delay: 24s; }
+
+
+    @keyframes slide {
+      0%   { opacity: 0; }
+      5%   { opacity: 1; }
+      15%  { opacity: 1; }
+      20%  { opacity: 0; }
+      100% { opacity: 0; }
+    }
+  </style>
+      
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/css/slicknav.css">
@@ -25,6 +71,7 @@
 	<link rel="stylesheet" href="assets/css/nice-select.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <!-- ? Preloader Start -->
     <div id="preloader-active">
@@ -272,12 +319,12 @@
 
     <!-- About Law End-->
     <!-- Our Cases Start -->
-    <section id="OurWorks">
+    <!-- <section id="OurWorks">
     <div class="our-cases-area section-padding30">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
-                    <!-- Section Tittle -->
+               
                     <div class="section-tittle text-center mb-80">
                         <span>Our Cases you can see</span>
                         <h2>Explore our latest causes that we works </h2>
@@ -292,7 +339,7 @@
                         </div>
                         <div class="cases-caption">
                             <h3><a href="#">Ensure Education For Every Poor Children</a></h3>
-                            <!-- Progress Bar -->
+              
                             <div class="single-skill mb-15">
                                 <div class="bar-progress">
                                     <div id="bar1" class="barfiller">
@@ -303,7 +350,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- / progress -->
+                  
                             <div class="prices d-flex justify-content-between">
                                 <p>Raised:<span> $20,000</span></p>
                                 <p>Goal:<span> $35,000</span></p>
@@ -318,7 +365,7 @@
                         </div>
                         <div class="cases-caption">
                             <h3><a href="#">Providing Healthy Food For The Children</a></h3>
-                            <!-- Progress Bar -->
+                         
                             <div class="single-skill mb-15">
                                 <div class="bar-progress">
                                     <div id="bar2" class="barfiller">
@@ -329,7 +376,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- / progress -->
+                
                             <div class="prices d-flex justify-content-between">
                                 <p>Raised:<span> $20,000</span></p>
                                 <p>Goal:<span> $35,000</span></p>
@@ -344,7 +391,7 @@
                         </div>
                         <div class="cases-caption">
                             <h3><a href="#">Supply Drinking Water For  The People</a></h3>
-                            <!-- Progress Bar -->
+                      
                             <div class="single-skill mb-15">
                                 <div class="bar-progress">
                                     <div id="bar3" class="barfiller">
@@ -355,7 +402,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- / progress -->
+                     
                             <div class="prices d-flex justify-content-between">
                                 <p>Raised:<span> $20,000</span></p>
                                 <p>Goal:<span> $35,000</span></p>
@@ -366,7 +413,7 @@
             </div>
         </div>
     </div>
-    </section>
+    </section> -->
     <!-- Our Cases End -->
     <!-- Featured_job_start -->
     <section id="AboutUs" class="featured-job-area section-padding30 section-bg2" >
@@ -625,65 +672,89 @@
     </section>
     <!-- Want To work End -->
     <!--? Testimonial Start -->
-    <div class="testimonial-area testimonial-padding">
-        <div class="container">
-            <!-- Testimonial contents -->
-            <div class="row d-flex justify-content-center">
-                <div class="col-xl-8 col-lg-8 col-md-10">
-                    <div class="h1-testimonial-active dot-style">
-                        <!-- Single Testimonial -->
-                        <div class="single-testimonial text-center">
-                            <div class="testimonial-caption ">
-                                <!-- founder -->
-                                <div class="testimonial-founder">
-                                    <div class="founder-img mb-40">
-                                        <img src="assets/img/gallery/testimonial.png" style="width: 420px; height: 50;" alt="FutureRadianceLogo">
-                                        <!-- <span>Margaret Lawson</span>
-                                        <p>Creative Director</p> -->
-                                    </div>
-                                </div>
-                                <!-- <div class="testimonial-top-cap">
-                                    <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
-                                </div> -->
-                            </div>
-                        </div>
-                        <!-- Single Testimonial -->
-                        <div class="single-testimonial text-center">
-                            <div class="testimonial-caption ">
-                                <!-- founder -->
-                                <div class="testimonial-founder">
-                                    <div class="founder-img mb-40">
-                                        <img src="assets/img/gallery/testimonial.png" alt="">
-                                        <span>Margaret Lawson</span>
-                                        <p>Creative Director</p>
-                                    </div>
-                                </div>
-                                <div class="testimonial-top-cap">
-                                    <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Testimonial -->
-                        <div class="single-testimonial text-center">
-                            <div class="testimonial-caption ">
-                                <!-- founder -->
-                                <div class="testimonial-founder">
-                                    <div class="founder-img mb-40">
-                                        <img src="assets/img/gallery/testimonial.png" alt="">
-                                        <span>Margaret Lawson</span>
-                                        <p>Creative Director</p>
-                                    </div>
-                                </div>
-                                <div class="testimonial-top-cap">
-                                    <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-9 col-md-10 col-sm-12">
+                <!-- Section Tittle -->
+                <div class="section-tittle text-center mb-80">
+                    <br><br>
+    <h2>Feedbacks</h2>
+
+           
                 </div>
             </div>
         </div>
     </div>
+    <div class="slider">
+        <img src="assets/img/gallery/t1.png" alt="">
+        <img src="assets/img/gallery/t2.png" alt="">
+        <img src="assets/img/gallery/t3.png" alt="">
+        <img src="assets/img/gallery/t4.png" alt="">
+        <img src="assets/img/gallery/t5.png" alt="">
+        <img src="assets/img/gallery/t6.png" alt="">
+        <img src="assets/img/gallery/t7.png" alt="">
+        <img src="assets/img/gallery/t8.png" alt="">
+        <img src="assets/img/gallery/t9.png" alt="">
+        <img src="assets/img/gallery/t10.png" alt="">
+        
+      </div>
+    <!-- <div class="testimonial-area testimonial-padding">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-8 col-lg-8 col-md-10">
+                    <div class="h1-testimonial-active dot-style">
+            -->
+                   <!--       <div class="single-testimonial text-center">
+                            <div class="testimonial-caption ">
+                               founder -->
+                                <!-- <div class="testimonial-founder">
+                                    <div class="founder-img mb-40">
+                                        <img src="assets/img/gallery/testimonial.png" style="width: 420px; height: 50;" alt="FutureRadianceLogo">
+                                  
+                                    </div>
+                                </div> -->
+                                <!-- <div class="testimonial-top-cap">
+                                    <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
+                                </div> 
+                            </div>
+                        </div>-->
+                        <!-- Single Testimonial 
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-caption ">
+                    
+                                <div class="testimonial-founder">
+                                    <div class="founder-img mb-40">
+                                        <img src="assets/img/gallery/testimonial.png" alt="">
+                                        <span>Margaret Lawson</span>
+                                        <p>Creative Director</p> 
+                                    </div>
+                                </div>
+                                <div class="testimonial-top-cap">
+                                    <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
+                                </div> 
+                            </div>
+                        </div> 
+                         Single Testimonial -->
+                        <!-- <div class="single-testimonial text-center">
+                            <div class="testimonial-caption ">
+                         
+                                <div class="testimonial-founder">
+                                    <div class="founder-img mb-40">
+                                        <img src="assets/img/gallery/testimonial.png" alt="">
+                                        <span>Margaret Lawson</span>
+                                        <p>Creative Director</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-top-cap">
+                                    <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
     <!-- Testimonial End -->
     <!--? Blog Area Start -->
     <!-- <section class="home-blog-area section-padding30">
